@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/common.css" type="text/css" rel="stylesheet">
+    <link href="./css/pc.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/> 
+     <!-- favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-96x96.png">
+<link rel="manifest" href="./img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <title>Ambassador Hotel</title>
+</head>
+ <!-- script -->
+ <script src="./js/jquery-1.12.4.js"></script>
+ <script src="./js/hotel.js"></script>
+
+<body>
+    <!-- header -->
+    <div id="page">
+    <section class="header">
+        <header class="header-area">
+            <div class="header-logo">
+                <a href="#none" class="logo">
+                    <img src="./img/mainlogo.png" alt="">
+                </a>
+                <nav>
+                    <!-- menu박스 -->
+                    <ul class="menu">
+                        <li data-alt="tab1">
+                            <a href="#none">SPECIAL OFFERS</a>
+                        </li>
+                        <li data-alt="tab2">
+                            <a href="#none">HOTELS</a>
+                        </li>
+                        <li data-alt="tab3">
+                            <a href="#none">ACIVITIES</a>
+                        </li>
+                        <li data-alt="tab4">
+                            <a href="#none">DINING</a>
+                        </li>
+                        <li data-alt="tab5">
+                            <a href="#none">MEMBERSHIP</a>
+                        </li>
+                    </ul>      
+                </nav>
+            </div>
+             <div class="overlay"></div> 
+            <div class="hamburger">
+                <input type="checkbox" id="trigger">
+                <label for="trigger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <h2 class="mypage">마이페이지</h2>
+                    <h2>예약확인</h2>
+                    <h2>EVENTS</h2>
+                    <h2>멤버쉽</h2>
+                    <h2>시설안내</h2>
+                    <h2>가격 및 이용안내</h2>
+                    <h2>고객지원</h2>
+                </div>
+            </div> 
+        </header>
+
+        <!-- 서브메뉴 박스 -->
+        <div class="sub-menu-box">
+            <ul id="tab1" class="sub-menu">
+                <li class="sub-li">PACKAGE & TICKET</li>
+                <li class="sub-li">EVENT & PROMOTION</li>
+                <li class="sub-li">ENTERTAINMENT</li>
+            </ul>
+            <ul id="tab2" class="sub-menu">
+                <li class="sub-li">OVERVIEW</li>
+                <li class="sub-li">객실</li>
+                <li class="sub-li">부대시설</li>
+            </ul>
+            <ul id="tab3" class="sub-menu">
+                <li class="sub-li">LOCAL AREA</li>
+                <li class="sub-li">DINING</li>
+                <li class="sub-li">STORE</li>
+            </ul>
+            <ul id="tab4" class="sub-menu">
+                <li class="sub-li">FINE DINE & DRINK</li>
+                <li class="sub-li">CASUAL DINE & DRINK</li>
+                <li class="sub-li">CRAB & GO</li>
+            </ul>
+            <ul id="tab5" class="sub-menu">
+                <li class="sub-li">AMBASSADOR MEMBERSHIP</li>
+                <li class="sub-li">AMBASSADOR CLUB</li>
+                <li class="sub-li">AMBASSADOR PLUS+CLUB</li>
+
+            </ul>
+        </div>
+        <ul class="gallery">
+            <li>
+                <div class="content">
+                    <h2>경원재 앰배서더 인천</h2>
+                    <p>
+                        최첨단 국제도시 송도 중심에 위치해있어 현대적인 빌딩 숲 속에서 
+                    </p>
+                    <p>
+                        고풍스런 전통미를 뽐내며 장관을 연출하고 있습니다.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h2>노보텔 앰배서더 서울 강남</h2>
+                    <p>
+                        프랑스풍 특1급 호텔로 전세계 400여 개의 노보텔 체인 중 하나로 
+                    </p>
+                    <p>
+                        세계적인 브랜드에 걸맞은 고품격 서비스와 시설을 자랑합니다.
+                    </p>
+                    <div class="sns">
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h2>머큐어 앰배서더 제주</h2>
+                    <p>
+                        인공적인 요소를 최대한 배제하고 자연 친화적으로 설계된 머큐어 앰배서더 제주는 
+                    </p>
+                    <p>
+                        제주의 진정한 자연 속에 위치하고 있으며 71개의 객실로 이루어져 있습니다.
+                    </p>
+                    <div class="sns">
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h2>페어몬트 앰배서더 서울</h2>
+                    <p>
+                        한국에 첫번째로 선보이는 페어몬트 호텔로 세련된 인테리어가 돋보이는 326개의 객실을 구비
+                    </p>
+                    <P>
+                        하고 있으며, 한강과 역동적인 서울 전경이 한눈에 들어오는 탁 트인 전망을 자랑합니다.
+                    </P>
+                    <div class="sns">
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="content">
+                    <h2>그랜드 머큐어 앰배서더 창원</h2>
+                    <p>
+                        경남지역 유일의 특1급 호텔로서 세련되고 현대적 감각의 321개의 객실의 안락한 침대와 
+                    </p>
+                    <p>
+                        편안한 투숙환경, 초고속 유무선인터넷 등은 비즈니스 여행객과 레저 여행객 모두에게 이상적입니다.
+                    </p>
+                    <div class="sns">
+                        <a href="#none"></a>
+                        <a href="#none"></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="hotel-reservation">
+            <div id="hotel">
+                <span>호텔 지역 선택</span>
+                <select>
+                <option selected>HOTEL SEOUL</option>
+                    <option>HOTEL INCHEON</option>
+                    <!-- selected : 해당 옵션 선택 -->
+                    <option>HOTEL ULSAN</option>
+                    <option>HOTEL DAEGU </option>
+                    <option>HOTEL BUSAN</option>
+                    <option>HOTEL JEJU</option>
+                  
+                    <!-- => option : 선택할수 있는 옵션 생성 -->
+                </select>
+            </div>
+            <div id="date">
+                <span>CHECK IN / OUT</span>
+                <div id="dd"><input type="date" id="checkinout" class="checkin" style="color: #111;"> ~ <input type="date" class="checkin" ></div>
+            </div>
+            <div id="room">
+                <span>ROOM</span>
+                <select>
+                <option selected>1</option>
+                    <option>2</option>
+                    <!-- selected : 해당 옵션 선택 -->
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <!-- => option : 선택할수 있는 옵션 생성 -->
+                </select>
+            </div>
+            <div id="adult">
+                <span>ADULT</span>
+                <select>
+                <option selected>1</option>
+                    <option>2</option>
+                    <!-- selected : 해당 옵션 선택 -->
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <!-- => option : 선택할수 있는 옵션 생성 -->
+                </select>
+            </div>
+            <div id="child">
+                <span>CHILD</span>
+                <select>
+                <option selected>1</option>
+                    <option>2</option>
+                    <!-- selected : 해당 옵션 선택 -->
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <!-- => option : 선택할수 있는 옵션 생성 -->
+                </select>
+            </div>
+            <div id="searc">
+                <span>SEARCH <i class="fas fa-search"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- section1 -->
+    <section class="section1">
+        <div data-aos="fade-down" data-aos-duration="500" data-aos-offset="200" class="scroll" >
+            <p>SCROLL DOWN</p>
+            <i class="fa-solid">
+                <img src="./img/slide-down.gif">
+            </i>
+        </div>
+        <div class="hello" data-aos="fade-down" data-aos-duration="600" data-aos-offset="300">
+            <p>반갑습니다!</p>
+            <p><span>당신의 엠버서더가 추천합니다</p>
+        </div>
+        <div data-aos="fade-down" data-aos-duration="800" data-aos-offset="400">
+            <div class="box-1">
+                <div class="box1-1">
+                        <div class="boximg">
+                        <img src="./img/RTQKskHkJCB0TPYweNlqBk0vjgdlBkb3 2.png" alt="한겨울에도 따뜻한 물놀이">
+                        </div>
+                    <h2>한겨울에도 따뜻한 물놀이</h2>
+                    <p>이국적인 낮의 경관과 로맨틱한 밤 분위기를 동시에</p>
+                    <p>만날 수 있는 시그니처 스팟입니다.</p>
+                </div> 
+                <div class="box1-1">
+                        <div class="boximg">
+                        <img src="./img/haobin_20220111093007 1.png" alt="셰프의손맛을">
+                        </div>
+                    <h2>셰프의 손맛을!</h2>
+                    <p>객실에서 셰프가 정성스레 준비한 음식을 </p>
+                    <p>객실로 배달해드립니다.</p>
+                </div>
+                <div class="box1-1">
+                        <div class="boximg">
+                        <img src="./img/fb_loung_01_20220218121308 1.png" alt="최적의공간">
+                        </div>
+                    <h2>아늑한 휴식을 위한 최적의 공간</h2>
+                    <p>프라이빗한 휴식공간에서</p>
+                    <p>아늑한 여유로움을 만끽하세요.</p>
+                </div>
+            </div>
+
+            <div class="box-2">
+                <div class="box2-winter">
+                    <img src="./img/nu8gKVnNqLjIO1iBwy8egCcxwaiXanGB 1.png" alt="그겨울,뜨끈한바람이분다.">
+                </div> 
+                <div class="box2-1">
+                        <div class="boximg">
+                        <img src="./img/room_psuite_01_20220216145430 1.png" alt="내마음속최고의시티뷰">
+                        </div>
+                    <h2>내 마음 속 최고의 시티뷰</h2>
+                    <p>객실에서 셰프가 정성스레 준비한 음식을 </p>
+                    <p>객실로 배달해드립니다.</p>
+                </div>
+                <div class="box2-1">
+                        <div class="boximg">
+                        <img src="./img/g6rqIL1CrPahpoJHSLp5QH3SXa8YuUJy 1.png" alt="편백가득자쿠지">
+                        </div>
+                    <h2>편백 가득 자쿠지, 혼자 쓰세요</h2>
+                    <p>편백향 가득한 따뜻한 히노끼스파에 힘있고</p>
+                    <p>두꺼운 물줄기가 콸콸 쏟아져요.</p>
+                </div>
+            </div>
+
+            <div class="box-3">
+            <div class="box3-1">
+                    <div class="boximg2">
+                    <img src="./img/C6F3CJ1v6AglnpmnXqOCb3nVLdzs8Vvc 1.png" alt="아이보다 어른들이 더 좋아해요">
+                    </div>
+                <h2>아이보다 어른들이 더 좋아해요</h2>
+                <h2>아이들이 웃는 공간이니까.</h2>
+                <div class="box3-1p">
+                    <p>새로운 경험으로 창의적인 생각을 하게 만드는 공간</p>
+                </div>
+            </div> 
+            <div class="box3-2">
+                    <div class="boximg2">
+                    <img src="./img/kKvfcfJumqJ4L8N4HGmVkXenbuiz39Bf 1.png" alt="하늘이 보이는 뜨끈한 수영장">
+                    </div>
+                <h2>하늘이 보이는 뜨끈한 수영장,</h2>
+                <h2>여기 있어요.</h2>
+                <div class="box3-1p">
+                    <p>겨울 바다를 보며 경험하는 따뜻한 수영장 </p>
+                    <p>바로 현실로 만들수있어요.</p>
+                </div>
+            </div>
+            <div class="box3-3">
+                    <div class="boximg2">
+                    <img src="./img/wDt8EWasFLR0w3eN8fldwHZW0FxyczIk 1.png" alt="오션뷰온천">
+                    </div>
+                <h2>바다보며, 온천하기 좋은 계절이에요</h2>
+                <div class="box3-1p">
+                    <p>날씨가 추워질수록 생각나는 그 곳</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- section2 -->
+    <section class="section2">
+        <div>
+            <div class="special" >
+                <h1>Speacial Offers</h1>
+                <h3>다양한 구성의 패키지로 특별한 쉼을 선사합니다.</h3>
+            </div>
+            <div class="container2">
+                <div class="love" >
+                    <div class="love-img">
+                        <img src="./img/Love.png">
+                    </div>
+                    <div class="special-container">
+                        <div class="special-1">
+                            <div class="special-img">
+                            <img src="./img/spacialoffers6 1.png">
+                            </div>
+                            <h1>STAY WITH MY AMOUR ♥</h1>
+                            <div class="special-p">
+                                <p>사랑하는 연인과 함께 로맨틱한 프렌치 다이닝과</p> 
+                                <p>폴라로이드 사진 엽서로 소중한 순간을 기록해 보세요</p>
+                                <div class="hash-tag">
+                                    <a>#객실</a><a>#투숙객</a><a>#로맨틱</a>
+                                </div>
+                            </div>
+                    </div>
+                        <div class="special-2">
+                            <div class="special-img">
+                            <img src="./img/spacialoffers5 1.png">
+                            </div>
+                            <h1>특별한날, 우리에게 꼭 맞는 향</h1>
+                            <div class="special-p">
+                                <p>연인과 특별한 날 특별한 호캉스를 계획하고 있는</p>
+                                <p>당신을 위해 준비한 프리미엄 향수 공방 패키지!</p>
+                                <div class="hash-tag">
+                                    <a>#엠버서더회원</a><a>#투숙객</a><a>#테마객실</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wine">
+                        <div class="special-3">
+                            <div class="special-img">
+                            <img src="./img/384256_20220105184549 1.png">
+                            </div>
+                            <h1>맛있는거 먹을 때 생각나는 사람 있죠?</h1>
+                            <div class="special-p">
+                                <p>밥을 같이 먹는다는 건, 그 이상의 의미를 갖고 있다. </p>
+                                <div class="hash-tag">
+                                    <a>#숙박</a><a>#엠버서더회원</a><a>#풀하우스</a>
+                                    <a>#테마객실</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-4">
+                            <div class="special-img">
+                            <img src="./img/spacialoffers8 1.png">
+                            </div>
+                            <h1>우리만을 위한 달콤한 딸기패키지</h1>
+                            <div class="special-p">
+                                <p>널찍한 클럽 스위트 객실에서</p>
+                                <p>딸기패키지와 함께 감각적인 호캉스를 즐겨보세요. </p>
+                                <div class="hash-tag">
+                                    <a>#객실</a><a>#숙박</a><a>#엠버서더회원</a><a>#스위트객실</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bus" >
+                    <div class="bus-img">
+                        <img src="./img/Group 183.png">
+                    </div>
+                    <div class="special-container">
+                        <div class="special-1">
+                                <div class="special-img">
+                                <img src="./img/spacialoffers3.png">
+                                </div>
+                                <h1>기억에 남도록, 감성충전 100%</h1>
+                                <div class="special-p">
+                                    <p>추언이 필요하신가요? 일상의 짐은 내려놓고,</p>
+                                    <P>재충전의 시간을 가져보세요</P>
+                                    <div class="hash-tag">
+                                        <a>#숙박</a><a>#엠버서더회원</a><a>#힐링</a>
+                                        <a>#테마객실</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="special-2">
+                            <div class="special-img">
+                                <img src="./img/spacialoffers4 1.png">
+                            </div>
+                                <h1>떠나자! My Journey 패키지</h1>
+                                <div class="special-p">
+                                    <p>봄바람 불어오는 프라이빗한 객실에서</p>
+                                    <P>최상의 휴식으로 도심속 휴양을 느껴보세요</P>
+                                    <div class="hash-tag">
+                                        <a>#엠버서더회원</a><a>#캐리어파우치제공</a><a>#조식무료제공</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="wine">
+                        <div class="special-3">
+                            <div class="special-img">
+                                <img src="./img/spacialoffers1.png">
+                            </div>
+                                <h1>환상적인 어트랙션이 가득한 테마파크</h1>
+                                <div class="special-p">
+                                    <p>아이들에 기억에 남도록, with LAND</p>
+                                    <div class="hash-tag">
+                                        <a>#투숙객</a><a>#엠버서더회원</a><a>#엠버서더키즈</a>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="special-4">
+                            <div class="special-img">
+                                <img src="./img/280x186_20220217162025 1.png">
+                            </div>
+                                <h1>여유로운 스테이 30 HOURS IN JOY</h1>
+                                <div class="special-p">
+                                    <p>바쁜 일상 속에서 잠시 벗어나 30시간의 휴식</p>
+                                    <p>여유로움을 만끽할 수 있는 패키지를 소개합니다. </p>
+                                    <div class="hash-tag">
+                                        <a>#숙박</a><a>#엠버서더회원</a><a>#풀하우스</a>
+                                        <a>#테마객실</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section>
+        <div class="section3-background">
+            <div class="membership">
+                <p>앰버서더 멤버쉽만을 위한 혜택,</p>
+                <p><span>여기서 알아보세요.</h1>
+            </div>
+            <div class="section3-box">
+                <div class="inner">
+                    <div class="out_box">
+                        <div class="gallery2">
+                            <!-- 이미지 -->
+                            <img src="./img/Mask group-1.png">
+                            <!-- hover하면 나타나는 박스 -->
+                            <div class="gallery2_mask">
+                                <!-- 왼쪽 -->
+                                <div>
+                                    <strong>펜트하우스</strong>
+                                    <p>엠버서더 회원권으로 </p>
+                                    <p>무한히 누리는 혜택</p>
+                                </div>
+                                <!-- 오른쪽 -->
+                                <span>바로가기</span>
+                            </div>
+                            <!-- 투명한 화면 이동 버튼 -->
+                            <a href="#"></a>
+                        </div>
+                        <div class="gallery2">
+                            <!-- 이미지 -->
+                            <img src="./img/membership2.png">
+                            <!-- hover하면 나타나는 박스 -->
+                            <div class="gallery2_mask">
+                                <!-- 왼쪽 -->
+                                <div>
+                                    <strong>프라이빗 레지던스</strong>
+                                    <p>엠버서더에서 즐기는</p>
+                                    <p>Private Journey</p>
+                                </div>
+                                <!-- 오른쪽 -->
+                                <span>바로가기</span>
+                            </div>
+                            <!-- 투명한 화면 이동 버튼 -->
+                            <a href="#"></a>
+                        </div>
+                        <div class="gallery2">
+                            <!-- 이미지 -->
+                            <img src="./img/membership3.png">
+                            <!-- hover하면 나타나는 박스 -->
+                            <div class="gallery2_mask">
+                                <!-- 왼쪽 -->
+                                <div>
+                                    <strong>Golf Club</strong>
+                                    <p>국내 단 하나뿐인,</p>
+                                    <p>독보적인 컨트리 클럽</p>
+                                </div>
+                                <!-- 오른쪽 -->
+                                <span>바로가기</span>
+                            </div>
+                            <!-- 투명한 화면 이동 버튼 -->
+                            <a href="#"></a>
+                        </div>
+                        <div class="gallery2">
+                            <!-- 이미지 -->
+                            <img src="./img/membership1.png">
+                            <!-- hover하면 나타나는 박스 -->
+                            <div class="gallery2_mask">
+                                <!-- 왼쪽 -->
+                                <div>
+                                    <strong>엠버서더 회원권</strong>
+                                    <p>하나의 회원권으로 누리는</p>
+                                    <p>엠버서더의 모든 것</p>
+                                </div>
+                                <!-- 오른쪽 -->
+                                <span>바로가기</span>
+                            </div>
+                            <!-- 투명한 화면 이동 버튼 -->
+                            <a href="#"></a>
+                        </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section>
+        <div class="section4">
+            <div class="event">
+                <h1>Event & Promotion</h1>
+                <h3>앰버서더호텔에서 진행되는 다양한 이벤트를 만나보세요</h3>
+            </div>
+            <div class="eventbox">
+                <div class="TOGOBOX" data-aos="fade-up" data-aos-duration="500" data-aos-offset="400" class="scroll">
+                    <img src="./img/390258_togo_20220218165209 1.png">
+                    <h3>To Go Box</h3>
+                    <P>마법같은 시간이 펼쳐지는 프리미엄</P>
+                    <P>투고 박스와 함께 특별한날을 기념해보세요!</P>
+                    <P class="tag">#3주전 예약 #특별한가격</P>
+                    <P class="time">2022.01.01~2022.06.30</P>
+                </div>
+                <div class="mong-friendly" data-aos="fade-up" data-aos-duration="900" data-aos-offset="400" class="scroll">
+                    <img src="./img/390_258_20220120182114 1.png">
+                    <h3>MONG-FRIENDLY SERVICE</h3>
+                    <P>PXG와 함께하는 멍플렌들리</P>
+                    <P>서비스를 소개합니다.</P>
+                    <P class="tag">#조식 #스파 #SKYPASS적립가능</P>
+                    <P class="time">2022.03.01~2022.03.16</P>
+                </div>
+                <div class="lifestyle" data-aos="fade-up" data-aos-duration="1300" data-aos-offset="400" class="scroll">
+                    <img src="./img/lify_3_20210726183844 1.png">
+                    <h3>노보텔 라이프 스타일 컬렉션 런칭!</h3>
+                    <P>노보텔 동대문이 엄선한 라이프 스타일 컬렉션으로</P>
+                    <P>특별한 나만의 홈테리어를 디자인하세요.</P>
+                    <P class="tag">#Suite  #얼리버드고객 </P>
+                    <P class="time">2022.01.01~2023.01.01</P>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section5 -->
+    <section class="section5">
+        <div>
+            <div class="section5-gallery">
+                <h1>IMAGE GALLERY</h1>
+                <h3>앰버서더호텔에서 진행되는 다양한 이벤트를 만나보세요</h3>
+            </div>
+    
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                  <img src="./img/slide1.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide2.png" alt="">
+                </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide3.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide4.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide5.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide6.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide7.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/slide8.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+        </div>  
+        <!-- 탑버튼 영역 -->
+        <div id="top-btn" class="show">
+            <div><img src="./img/top-btn.png" alt="top-btn"></div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="footer">
+        <div class="footer-service">
+            <div class="center">
+                <h1>CUSTOMER CENTER</h1>
+                <div class="fax">
+                    <div class="tel">
+                        <p>객실예약</p>
+                        <p>Tel.</p>
+                        <p>Fax</p>
+                    </div>
+                    <div class="number">
+                        <p>(+82)032-729-2000</p>
+                        <p>1833-8855</p>
+                        <p>032-729-2100</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <h1>E-CONCIERGE SERVICE</h1>
+                <p>엠버서더를 더욱 편리하게 이용할 수 있는 컨시어지앱</p>
+                <div>
+                    <img src="./img/appstore.png">
+                    <img class="googleplay" src="./img/googleplay.png">
+                </div>
+            </div>
+            <div class="family">
+                <h1>SNS</h1>
+                <div>
+                    <img src="./img/instagram.png">
+                    <img class="facebook" src="./img/facebook.png">
+                    <img class="twiter" src="./img/twiter.png">
+                </div>
+            </div>
+        </div>
+        <div class="sitemap">
+            <h3>사이트맵</h3>
+            <h3>오시는길</h3>
+            <h3 class="site-none">개인정보 처리 방침</h3>
+            <h3>채용안내</h3>
+            <h3 class="site-none">이용약관</h3>
+            <h3>ABOUT US</h3>
+        </div>
+        <div class="copyright">
+            <p class="address">(주)서한사 서울특별시 중구 동호로 287 사업자등록번호 203-81-43548 통신판매신고번호 서울 중구 0755호 대표 이승소</p>
+            <p>Copyright (c) 2022 Ambassador Hotel Group. All rights reserved.</p>
+        </div>
+    </section>
+
+</div>
+</body>
+
+<!-- 스크립트 -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+      AOS.init();
+</script> 
+</html>
